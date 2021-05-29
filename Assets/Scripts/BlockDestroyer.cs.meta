@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: dc7d2f9f81db0c945848e139c07b3f04
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - breaksound: {fileID: 8300000, guid: 99d1c12e3901ad94bbbf6a2c24b844d8, type: 3}
+  - ImpactVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+  executionOrder: 300
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
