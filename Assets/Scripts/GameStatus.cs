@@ -9,7 +9,7 @@ public class GameStatus : MonoBehaviour
     [SerializeField] int pointesPerBlock = 83;
     [SerializeField] int currentScore = 0;
     [SerializeField] TextMeshProUGUI scoretext;
-    int i = 0;
+    //int i = 0;
     // Start is called before the first frame update
     void Start()
     {
