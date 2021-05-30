@@ -2,7 +2,7 @@ Hello Everybody , I made a 2D game star smasher using the unity game engine and 
 Now the game is a bit buggy and consists of 5 levels , you have to prevent the ball from falling and break all the blocks and win the game 
 Incase you wanna play the game :https://play.unity.com/mg/other/star-smasher-updated this is the browser version
 Although for a smoother experience I recommend downloading and running it on your machine.
-Files Link : 
+Files Link : https://featherheater01.itch.io/star-smasher
 
  h![Screenshot (102)](https://user-images.githubusercontent.com/82871317/120115411-2899de00-c1a1-11eb-9435-625abc8f613c.png)
 
