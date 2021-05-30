@@ -21,14 +21,53 @@ public class BallPos : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
-        if(!hasStarted)
+    {
+        if (!hasStarted)
         {
             lockPaddle();
             launch();
-        
+
         }
-       
+        else if(hasStarted)
+        {
+            Vector2 temp = new Vector2(0, 0);
+            temp.x = MyRigidBody2D.velocity.x;
+            temp.y = MyRigidBody2D.velocity.y;
+            if (temp.x < 6 && temp.x > 0)
+            {
+                temp.x += 6;
+                if (temp.x > 10)
+                {
+                    temp.x = 10;
+                }
+            }
+            if (temp.x > -6 && temp.x < 0)
+            {
+                temp.x -= 6;
+                if (temp.x < -10)
+                {
+                    temp.x = -10;
+                }
+            }
+            if (temp.y < 6 && temp.y > 0)
+            {
+                temp.y += 6;
+                if (temp.y > 10)
+                {
+                    temp.y = 10;
+                }
+            }
+            if (temp.y > -6 && temp.y < 0)
+            {
+                temp.y -= 6;
+                if (temp.y < -10)
+                {
+                    temp.y = -10;
+                }
+            }
+            MyRigidBody2D.velocity = temp;
+            Debug.Log(MyRigidBody2D.velocity);
+        } 
     }
     void lockPaddle()
     {
@@ -42,7 +81,7 @@ public class BallPos : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             hasStarted = true;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(xv, yv);
+            MyRigidBody2D.velocity = new Vector2(xv, yv);
         }
 
     }
